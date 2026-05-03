@@ -9,25 +9,42 @@ A full-stack **team task management** application: an **Express.js** REST API wi
 
 <img width="1412" height="752" alt="Screenshot 2026-05-03 at 11 27 09 PM" src="https://github.com/user-attachments/assets/eb2b1f2a-981c-4425-b6b4-aec25f4e9d55" />
 
+----
 
 <img width="1415" height="757" alt="Screenshot 2026-05-03 at 11 25 23 PM" src="https://github.com/user-attachments/assets/c4e95530-a554-414f-bed1-0343fefbcad8" />
 
+----
+
 <img width="1413" height="750" alt="Screenshot 2026-05-03 at 11 26 23 PM" src="https://github.com/user-attachments/assets/4e5205ab-6112-4e8b-9906-8e106a42cb73" />
+
+----
 
 <img width="1406" height="754" alt="Screenshot 2026-05-03 at 11 26 37 PM" src="https://github.com/user-attachments/assets/c1f88e84-3fdf-483c-9c79-491589464a2f" />
 
+----
+
 <img width="1408" height="751" alt="Screenshot 2026-05-03 at 11 26 07 PM" src="https://github.com/user-attachments/assets/655cdc3c-3516-447d-a119-3d7274f4d769" />
+
+----
 
 
 ## Member Dashboards
 
 <img width="1412" height="754" alt="Screenshot 2026-05-03 at 11 27 59 PM" src="https://github.com/user-attachments/assets/a3c423e7-51d5-48c1-9907-832c010055fa" />
 
+----
+
 <img width="1408" height="752" alt="Screenshot 2026-05-03 at 11 28 30 PM" src="https://github.com/user-attachments/assets/824964fd-1b0d-4ce3-8cf2-690ab756d0ff" />
+
+----
 
 <img width="1411" height="753" alt="Screenshot 2026-05-03 at 11 28 13 PM" src="https://github.com/user-attachments/assets/68a52075-d63f-48ba-a5e1-75df43e072a6" />
 
+----
+
 <img width="1411" height="753" alt="Screenshot 2026-05-03 at 11 27 48 PM" src="https://github.com/user-attachments/assets/fbca14a2-72f1-4202-b20a-d1993d4e8201" />
+
+----
 
 
 
