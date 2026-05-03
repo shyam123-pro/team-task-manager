@@ -1,0 +1,15 @@
+.DS_Store
+
+# env files (do not commit secrets)
+fe/.env
+be/.env
+
+# node / vite
+**/node_modules/
+**/dist/
+**/.vite/
+**/.cache/
+
+# logs
+**/*.log
+

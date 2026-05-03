@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Beige / cream background, mint accent, deep navy ink */
+    --background: 40 38% 96%;
+    --foreground: 222 47% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 14%;
+
+    /* Primary green #0aa370 */
+    --primary: 159 88% 34%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 156 90% 48%;
+
+    /* Soft beige secondary */
+    --secondary: 38 40% 92%;
+    --secondary-foreground: 222 47% 14%;
+
+    --muted: 40 30% 93%;
+    --muted-foreground: 222 16% 42%;
+
+    --accent: 159 70% 92%;
+    --accent-foreground: 159 88% 22%;
+
+    --destructive: 354 84% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 159 88% 30%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 35 95% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --info: 215 90% 56%;
+    --info-foreground: 0 0% 100%;
+
+    /* Coral & violet accents for variety */
+    --coral: 14 92% 64%;
+    --violet: 262 83% 64%;
+    --teal: 184 78% 42%;
+
+    --border: 40 20% 86%;
+    --input: 40 20% 86%;
+    --ring: 159 88% 34%;
+
+    --radius: 0.375rem;
+
+    /* Sidebar - deep navy gradient base with mint accent */
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 215 20% 80%;
+    --sidebar-primary: 159 88% 38%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 40% 17%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 222 40% 19%;
+    --sidebar-ring: 159 88% 38%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(159 88% 34% / 0.9) 0%, hsl(184 78% 38% / 0.85) 50%, hsl(215 90% 50% / 0.85) 100%);
+    --gradient-mint: linear-gradient(135deg, hsl(159 88% 34%), hsl(184 78% 38%));
+    --gradient-warm: linear-gradient(135deg, hsl(40 38% 96%), hsl(38 50% 88%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100% / 0.85), hsl(40 38% 96% / 0.6));
+
+    /* Shadows */
+    --shadow-glass: 0 8px 32px -8px hsl(222 47% 14% / 0.12);
+    --shadow-mint: 0 12px 40px -12px hsl(156 90% 50% / 0.45);
+  }
+
+  .dark {
+    --background: 222 47% 7%;
+    --foreground: 40 30% 95%;
+    --card: 222 47% 11%;
+    --card-foreground: 40 30% 95%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 40 30% 95%;
+    --primary: 156 90% 56%;
+    --primary-foreground: 222 47% 8%;
+    --secondary: 222 40% 17%;
+    --secondary-foreground: 40 30% 95%;
+    --muted: 222 40% 15%;
+    --muted-foreground: 215 16% 65%;
+    --accent: 156 60% 22%;
+    --accent-foreground: 156 90% 80%;
+    --border: 222 30% 22%;
+    --input: 222 30% 22%;
+    --ring: 156 90% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background-image:
+      radial-gradient(circle at 12% 10%, hsl(156 90% 56% / 0.10), transparent 45%),
+      radial-gradient(circle at 92% 90%, hsl(215 90% 56% / 0.12), transparent 50%),
+      radial-gradient(circle at 50% 50%, hsl(38 60% 86% / 0.30), transparent 60%);
+    background-attachment: fixed;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight font-semibold;
+  }
+}
+
+@layer components {
+  .glass {
+    background: hsl(0 0% 100% / 0.55);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    border: 1px solid hsl(0 0% 100% / 0.5);
+    box-shadow: var(--shadow-glass);
+  }
+  .glass-dark {
+    background: hsl(222 47% 11% / 0.6);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    border: 1px solid hsl(0 0% 100% / 0.08);
+  }
+  .stat-card {
+    @apply glass p-5 rounded-2xl;
+  }
+  .data-table {
+    @apply w-full text-sm;
+  }
+  .data-table th {
+    @apply text-left font-medium text-muted-foreground px-4 py-3 border-b border-border/60 bg-muted/30 text-xs uppercase tracking-wider;
+  }
+  .data-table td {
+    @apply px-4 py-3 border-b border-border/60;
+  }
+  .data-table tr:hover td {
+    @apply bg-muted/40;
+  }
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(156 90% 40%), hsl(215 90% 50%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
